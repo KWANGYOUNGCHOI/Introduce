@@ -1,6 +1,5 @@
 package com.kwang0.introduce.utils
 
-import android.content.Context
 import com.kwang0.introduce.common.App
 
 object ResUtils {
