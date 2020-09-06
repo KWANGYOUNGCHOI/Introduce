@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
 
         presenter = SplashPresenter(this)
             .also {
-                it.initLoadSplash()
+                it.initSplash()
             }
     }
 
