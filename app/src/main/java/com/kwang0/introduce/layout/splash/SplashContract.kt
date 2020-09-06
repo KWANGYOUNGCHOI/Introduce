@@ -6,5 +6,6 @@ interface SplashContract {
     }
 
     interface Presenter {
+        fun initLoadSplash()
     }
 }
