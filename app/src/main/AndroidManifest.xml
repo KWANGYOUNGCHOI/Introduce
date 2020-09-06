@@ -3,6 +3,7 @@
     package="com.kwang0.introduce">
 
     <application
+        android:name=".common.App"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
