@@ -1,9 +1,8 @@
 package com.kwang0.introduce.layout.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
 import com.kwang0.introduce.layout.main.MainActivity
 import com.kwang0.introduce.utils.HandlerUtils
