@@ -3,8 +3,10 @@ package com.kwang0.introduce.layout.splash
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import com.kwang0.introduce.R
 import com.kwang0.introduce.layout.main.MainActivity
+import com.kwang0.introduce.utils.HandlerUtils
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
 
@@ -16,7 +18,7 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
 
         presenter = SplashPresenter(this)
             .also {
-                it.initSplash()
+                HandlerUtils.splashPostDelay { it.initSplash() }
             }
     }
 
@@ -24,5 +26,6 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
 }
