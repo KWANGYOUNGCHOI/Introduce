@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimension -->
+    <dimen name="dimen.margin16">16dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text.header1">48dp</dimen>
+    <dimen name="text.header2">36dp</dimen>
+    <dimen name="text.header3">28dp</dimen>
+    <dimen name="text.size12">12dp</dimen>
+    <dimen name="text.size14">14dp</dimen>
+    <dimen name="text.size16">16dp</dimen>
+    <dimen name="text.size18">18dp</dimen>
+    <dimen name="text.size20">20dp</dimen>
+
+</resources>
