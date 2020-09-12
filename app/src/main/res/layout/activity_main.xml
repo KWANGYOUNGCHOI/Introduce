@@ -61,6 +61,7 @@
         android:src="@drawable/ic_add"
         android:contentDescription="@string/main.fab.external"
         android:layout_margin="16dp"
+        android:theme="@style/Kwang0.Theme.fabComponent"
         app:fabSize="mini" />
 
 </FrameLayout>
