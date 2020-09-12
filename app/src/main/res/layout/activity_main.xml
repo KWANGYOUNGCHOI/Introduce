@@ -8,7 +8,7 @@
     tools:context=".layout.main.MainActivity">
 
     <com.kwang0.introduce.view.scroll.StickyScrollView
-        android:id="@+id/sticky_scroll_view"
+        android:id="@+id/scrollMainStickyHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
