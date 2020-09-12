@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
 import com.kwang0.introduce.layout.main.MainActivity
-import com.kwang0.introduce.utils.HandlerUtils
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
 
@@ -17,7 +16,7 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
 
         presenter = SplashPresenter(this)
             .also {
-                HandlerUtils.splashPostDelay { it.initSplash() }
+                it.initSplash()
             }
     }
 
