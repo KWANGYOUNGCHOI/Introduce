@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         scrollMainStickyHeader.also {
-            it.header = layoutMainKwang0Name
+            it.header = layoutMainStickyKwang0Name
         }
     }
 }

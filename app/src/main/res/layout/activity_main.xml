@@ -30,20 +30,20 @@
             </FrameLayout>
 
             <FrameLayout
-                android:id="@+id/layoutMainKwang0Name"
+                android:id="@+id/layoutMainStickyKwang0Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp">
 
                 <com.kwang0.introduce.view.kwang0.Kwang0TextView
-                    android:id="@+id/textMainkwang0Name"
+                    android:id="@+id/textMainStickyKwang0Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
             </FrameLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view"
+                android:id="@+id/recyclerMainSticky"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
@@ -52,5 +52,15 @@
         </LinearLayout>
 
     </com.kwang0.introduce.view.scroll.StickyScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/main.fab.external"
+        android:layout_margin="16dp"
+        app:fabSize="mini" />
 
 </FrameLayout>
