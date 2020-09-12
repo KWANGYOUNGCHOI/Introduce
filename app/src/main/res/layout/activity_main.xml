@@ -60,7 +60,8 @@
         android:layout_gravity="end|bottom"
         android:src="@drawable/ic_add"
         android:contentDescription="@string/main.fab.external"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/dimen.margin16"
+        android:theme="@style/Kwang0.Theme.fabComponent"
         app:fabSize="mini" />
 
 </FrameLayout>
