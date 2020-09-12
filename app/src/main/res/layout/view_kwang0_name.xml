@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text.header3"
+        android:textSize="@dimen/text.header4"
         android:textColor="@color/grey_11"
         android:text="@string/common.kwang0.name" />
 
