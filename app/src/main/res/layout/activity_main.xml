@@ -18,6 +18,18 @@
             android:orientation="vertical">
 
             <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="설명" />
+
+            </FrameLayout>
+
+            <FrameLayout
                 android:id="@+id/layoutMainKwang0Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,6 +41,13 @@
                     android:layout_height="wrap_content" />
 
             </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         </LinearLayout>
 
