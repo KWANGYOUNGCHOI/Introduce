@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen.size48">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text.size20"
+        android:fontFamily="@font/night"
+        android:textColor="@color/grey_33"
+        android:layout_gravity="center"
+        android:text="@string/holder.unknown" />
+
+</FrameLayout>
