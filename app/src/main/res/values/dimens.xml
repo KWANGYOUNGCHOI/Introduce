@@ -8,6 +8,7 @@
     <dimen name="dimen.size24">24dp</dimen>
     <dimen name="dimen.size32">32dp</dimen>
     <dimen name="dimen.size48">48dp</dimen>
+    <dimen name="dimen.size64">64dp</dimen>
 
     <!-- Text -->
     <dimen name="text.size12">12sp</dimen>

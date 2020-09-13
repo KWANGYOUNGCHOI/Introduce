@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dimen.size48"
+    android:layout_height="@dimen/dimen.size64"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingTop="@dimen/dimen.size8"
@@ -13,6 +14,7 @@
         android:id="@+id/textExperienceHolderTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen.size8"
         android:fontFamily="@font/night"
         android:textColor="@color/grey_11"
         android:textSize="@dimen/text.size20"
@@ -24,7 +26,9 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:clipToPadding="false"
+        android:overScrollMode="never"
         android:paddingStart="@dimen/dimen.size16"
-        android:paddingEnd="@dimen/dimen.size16" />
+        android:paddingEnd="@dimen/dimen.size16"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </LinearLayout>
