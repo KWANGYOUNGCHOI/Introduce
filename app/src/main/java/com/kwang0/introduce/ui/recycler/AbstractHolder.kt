@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 abstract class AbstractHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     companion object {
         fun getInstance() {
-            
+
         }
     }
 }
