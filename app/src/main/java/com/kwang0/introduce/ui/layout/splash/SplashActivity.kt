@@ -5,8 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
+import com.kwang0.introduce.common.Const
 import com.kwang0.introduce.helper.AnimationListenerHelper
 import com.kwang0.introduce.ui.layout.main.MainActivity
+import com.kwang0.introduce.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
@@ -27,9 +29,23 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
     }
 
     override fun startMain() {
-        val intent = Intent(this, MainActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        startActivity(intent)
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+        lottieSplashKwang0.animate()
+            .setDuration(500)
+            .alpha(0.0f)
+            .setListener(object : AnimationListenerHelper{
+                override fun onAnimationEnd(animation: Animator?) {
+                    setMainTransitionIntent()
+                }
+            })
+    }
+
+    private fun setMainTransitionIntent() {
+        IntentUtils.startTransition(
+            this,
+            MainActivity::class.java,
+            textSplashKwang0Name,
+            Const.KWANG0_NAME_TRANSITION
+        )
+//        activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
 }
