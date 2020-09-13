@@ -18,4 +18,12 @@ class MainActivity : AppCompatActivity() {
             it.header = layoutMainStickyKwang0Name
         }
     }
+
+    override fun onBackPressed() {
+        if (fabMain.isFabMenuOpen) {
+            fabMain.handleFabMenu()
+        } else {
+            super.onBackPressed()
+        }
+    }
 }

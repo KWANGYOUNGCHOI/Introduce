@@ -2,7 +2,9 @@
 <resources>
 
     <!-- dimension -->
+    <dimen name="dimen.size8">8dp</dimen>
     <dimen name="dimen.size16">16dp</dimen>
+    <dimen name="dimen.size48">48dp</dimen>
 
     <!-- Text -->
     <dimen name="text.size12">12sp</dimen>
