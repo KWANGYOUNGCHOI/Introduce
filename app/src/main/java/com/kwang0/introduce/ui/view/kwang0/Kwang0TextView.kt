@@ -2,6 +2,7 @@ package com.kwang0.introduce.ui.view.kwang0
 
 import android.content.Context
 import android.graphics.Canvas
+import android.text.SpannableString
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
@@ -18,8 +19,18 @@ class Kwang0TextView @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        textKwang0Name.also {
-            it.text = ResUtils.getString("common.kwang0.name")
-        }
+        textKwang0Name.text = ResUtils.getString("common.kwang0.name")
+    }
+
+    fun getText(): String {
+        return textKwang0Name.text.toString()
+    }
+
+    fun setText(text: String) {
+        textKwang0Name.text = text
+    }
+
+    fun setSpannableText(text: SpannableString) {
+        textKwang0Name.text = text
     }
 }
