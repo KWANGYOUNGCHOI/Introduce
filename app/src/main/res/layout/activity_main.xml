@@ -22,13 +22,17 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/dimen.size16"
                 android:paddingTop="@dimen/dimen.size16"
-                android:paddingEnd="@dimen/dimen.size16">
+                android:paddingEnd="@dimen/dimen.size16"
+                android:paddingBottom="@dimen/dimen.size8">
 
                 <com.kwang0.introduce.ui.view.typewriter.TypeWriterView
                     android:id="@+id/typeWriterMainHeaderDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/night"
+                    android:lineSpacingExtra="@dimen/dimen.size16"
+                    android:maxLines="2"
+                    android:minLines="2"
                     android:textColor="@color/grey_11"
                     android:textSize="@dimen/text.size20"
                     tools:text="Hello, World" />
