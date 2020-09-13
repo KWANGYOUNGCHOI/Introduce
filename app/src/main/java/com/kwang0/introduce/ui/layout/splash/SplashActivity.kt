@@ -29,23 +29,7 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
     }
 
     override fun startMain() {
-        lottieSplashKwang0.animate()
-            .setDuration(500)
-            .alpha(0.0f)
-            .setListener(object : AnimationListenerHelper{
-                override fun onAnimationEnd(animation: Animator?) {
-                    setMainTransitionIntent()
-                }
-            })
-    }
-
-    private fun setMainTransitionIntent() {
-        IntentUtils.startTransition(
-            this,
-            MainActivity::class.java,
-            textSplashKwang0Name,
-            Const.KWANG0_NAME_TRANSITION
-        )
-//        activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+        startActivity(Intent(this, MainActivity::class.java))
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
 }
