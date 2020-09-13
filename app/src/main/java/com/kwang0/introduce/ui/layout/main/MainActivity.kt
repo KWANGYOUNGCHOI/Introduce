@@ -1,8 +1,10 @@
 package com.kwang0.introduce.ui.layout.main
 
+import android.animation.ValueAnimator
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.style.BackgroundColorSpan
+import android.view.ViewGroup
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
 import com.kwang0.introduce.common.Const
@@ -16,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         typeWriterMainHeaderDescription.apply {
-            setCallback { setHightLightKwang0Name() }
+            setCallback { changeCardBackgroundColor() }
             text = ""
             animateText(ResUtils.getString("main.header.description"))
         }
@@ -36,11 +38,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setHightLightKwang0Name() {
-        val str = SpannableString(textMainStickyKwang0Name.getText())
-        ResUtils.getColor("yellow_pastel")?.also {
-            str.setSpan(BackgroundColorSpan(it), 0, str.length, 0)
+    private fun changeCardBackgroundColor() {
+        val anim = ValueAnimator.ofFloat(0f, 1f) // animate from 0 to 1
+        anim.interpolator = DecelerateInterpolator()
+        anim.duration = 1500 // for 1500 ms
+        anim.addUpdateListener { animation ->
+            val lp: ViewGroup.LayoutParams = viewMainStickyKwang0Name.layoutParams as ViewGroup.LayoutParams
+            lp.width = (cardMainStickyKwang0Name.width * animation.animatedFraction).toInt()
+            viewMainStickyKwang0Name.layoutParams = lp
         }
-        textMainStickyKwang0Name.setSpannableText(str)
+        anim.start()
     }
 }

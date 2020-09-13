@@ -28,8 +28,9 @@
                     android:id="@+id/typeWriterMainHeaderDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/night"
                     android:textColor="@color/grey_11"
-                    android:textSize="@dimen/text.size16"
+                    android:textSize="@dimen/text.size20"
                     tools:text="Hello, World" />
 
             </FrameLayout>
@@ -37,13 +38,31 @@
             <FrameLayout
                 android:id="@+id/layoutMainStickyKwang0Name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:layout_height="wrap_content">
 
                 <com.kwang0.introduce.ui.view.kwang0.Kwang0TextView
                     android:id="@+id/textMainStickyKwang0Name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dimen.size16"
+                    android:paddingEnd="@dimen/dimen.size16" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMainStickyKwang0Name"
+                    android:layout_width="200dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/dimen.size8"
+                    app:cardBackgroundColor="@color/grey_cc"
+                    app:cardCornerRadius="@dimen/dimen.size4">
+
+                    <View
+                        android:id="@+id/viewMainStickyKwang0Name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellow_pastel" />
+
+                </androidx.cardview.widget.CardView>
 
             </FrameLayout>
 

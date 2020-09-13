@@ -2,6 +2,7 @@
 <resources>
 
     <!-- dimension -->
+    <dimen name="dimen.size4">4dp</dimen>
     <dimen name="dimen.size8">8dp</dimen>
     <dimen name="dimen.size16">16dp</dimen>
     <dimen name="dimen.size48">48dp</dimen>
