@@ -42,7 +42,8 @@
             <FrameLayout
                 android:id="@+id/layoutMainStickyKwang0Name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="@dimen/dimen.size64"
+                android:background="@color/white">
 
                 <com.kwang0.introduce.ui.view.kwang0.Kwang0TextView
                     android:id="@+id/textMainStickyKwang0Name"
@@ -57,6 +58,7 @@
                     android:layout_height="8dp"
                     android:layout_gravity="bottom"
                     android:layout_marginStart="@dimen/dimen.size8"
+                    android:layout_marginBottom="@dimen/dimen.size16"
                     app:cardBackgroundColor="@color/grey_cc"
                     app:cardCornerRadius="@dimen/dimen.size4">
 
