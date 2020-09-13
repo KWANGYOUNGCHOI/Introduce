@@ -6,15 +6,19 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.kwang0.introduce.R
 import com.kwang0.introduce.common.Const
 import com.kwang0.introduce.model.Story
+import com.kwang0.introduce.ui.recycler.story.StoryAdapter
 import com.kwang0.introduce.utils.ResUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity(), MainContract.View {
     private var presenter: MainPresenter? = null
+    private var adapter: StoryAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +38,15 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         }
         scrollMainStickyHeader.apply {
             header = layoutMainStickyKwang0Name
+        }
+
+        val lm = LinearLayoutManager(this)
+        recyclerMainSticky.apply {
+            layoutManager = lm
+            itemAnimator = null
+            addOnScrollListener(object : RecyclerView.OnScrollListener() {
+
+            })
         }
     }
 
@@ -58,6 +71,8 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     }
 
     override fun setAdapter(stories: List<Story>) {
-
+        adapter = StoryAdapter(stories).also {
+            recyclerMainSticky.adapter = it
+        }
     }
 }
