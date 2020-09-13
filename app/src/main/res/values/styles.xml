@@ -6,8 +6,6 @@
     </style>
 
     <style name="Kwang0.Theme.fabComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
-        <item name="tint">@color/orange_50</item>
-        <item name="backgroundTint">@color/orange_800</item>
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">4dp</item>
     </style>

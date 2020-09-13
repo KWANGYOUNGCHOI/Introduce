@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="external_blog_url"><![CDATA[https://wellohorld.tistory.com]]></string>
-    <string name="external_github_url"><![CDATA[https://github.com/KWANGYOUNGCHOI]]></string>
-    <string name="external_play_store_url"><![CDATA[https://play.google.com/store/apps/developer?id=kwang0]]></string>
+    <string name="external.blog.url"><![CDATA[https://wellohorld.tistory.com]]></string>
+    <string name="external.github.url"><![CDATA[https://github.com/KWANGYOUNGCHOI]]></string>
+    <string name="external.play.store.url"><![CDATA[https://play.google.com/store/apps/developer?id=kwang0]]></string>
 </resources>

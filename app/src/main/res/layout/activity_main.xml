@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -57,15 +58,17 @@
 
     </com.kwang0.introduce.ui.view.scroll.StickyScrollView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.kwang0.introduce.ui.view.fab.FloatingActionButtonView
         android:id="@+id/fabMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/dimen.size16"
+        android:backgroundTint="@color/orange_800"
         android:contentDescription="@string/main.fab.external"
         android:src="@drawable/ic_add"
         android:theme="@style/Kwang0.Theme.fabComponent"
+        android:tint="@color/orange_50"
         app:fabSize="mini" />
 
 </FrameLayout>
