@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textMainHeaderDescription.also {
-            it.text = ResUtils.getString("main.header.description")
+        typeWriterMainHeaderDescription.also {
+            it.text = ""
+            it.animateText(ResUtils.getString("main.header.description"))
         }
         textMainStickyKwang0Name.also {
             it.transitionName = Const.KWANG0_NAME_TRANSITION

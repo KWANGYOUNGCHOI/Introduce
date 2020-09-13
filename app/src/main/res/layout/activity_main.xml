@@ -24,8 +24,8 @@
                 android:paddingTop="@dimen/dimen.size16"
                 android:paddingEnd="@dimen/dimen.size16">
 
-                <TextView
-                    android:id="@+id/textMainHeaderDescription"
+                <com.kwang0.introduce.ui.view.typewriter.TypeWriterView
+                    android:id="@+id/typeWriterMainHeaderDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/grey_11"
