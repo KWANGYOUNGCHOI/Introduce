@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textKwang0Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text.header4"
+        android:fontFamily="casual"
+        android:text="@string/common.kwang0.name"
         android:textColor="@color/grey_11"
-        android:text="@string/common.kwang0.name" />
+        android:textSize="@dimen/text.size20"
+        android:textStyle="bold"
+        tools:text="kwang0"/>
 
 </FrameLayout>

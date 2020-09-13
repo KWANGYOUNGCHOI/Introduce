@@ -1,4 +1,4 @@
-package com.kwang0.introduce.view.scroll
+package com.kwang0.introduce.ui.view.scroll
 
 import android.content.Context
 import android.util.AttributeSet

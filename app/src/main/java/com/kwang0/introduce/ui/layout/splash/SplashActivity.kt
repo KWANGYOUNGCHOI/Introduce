@@ -1,10 +1,10 @@
-package com.kwang0.introduce.layout.splash
+package com.kwang0.introduce.ui.layout.splash
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
-import com.kwang0.introduce.layout.main.MainActivity
+import com.kwang0.introduce.ui.layout.main.MainActivity
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
 

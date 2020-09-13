@@ -1,4 +1,4 @@
-package com.kwang0.introduce.layout.splash
+package com.kwang0.introduce.ui.layout.splash
 
 interface SplashContract {
     interface View {

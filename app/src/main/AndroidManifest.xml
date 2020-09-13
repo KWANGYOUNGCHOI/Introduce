@@ -13,7 +13,7 @@
         android:theme="@style/Kwang0.Theme">
 
         <activity
-            android:name=".layout.splash.SplashActivity"
+            android:name="com.kwang0.introduce.ui.layout.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:noHistory="true">
             <intent-filter>
@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name=".layout.main.MainActivity"
+            android:name="com.kwang0.introduce.ui.layout.main.MainActivity"
             android:screenOrientation="portrait" />
 
     </application>
