@@ -1,4 +1,4 @@
-package com.kwang0.introduce.view.kwang0
+package com.kwang0.introduce.ui.view.kwang0
 
 import android.content.Context
 import android.graphics.Canvas

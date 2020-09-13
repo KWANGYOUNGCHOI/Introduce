@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.splash.SplashActivity">
+    tools:context=".ui.layout.splash.SplashActivity">
 
-    <com.kwang0.introduce.view.kwang0.Kwang0TextView
+    <com.kwang0.introduce.ui.view.kwang0.Kwang0TextView
         android:id="@+id/textSplashKwang0Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

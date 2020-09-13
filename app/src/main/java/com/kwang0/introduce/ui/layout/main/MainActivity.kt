@@ -1,4 +1,4 @@
-package com.kwang0.introduce.layout.main
+package com.kwang0.introduce.ui.layout.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
