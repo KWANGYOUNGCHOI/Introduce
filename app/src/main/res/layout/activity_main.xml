@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,12 +19,17 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:paddingStart="@dimen/dimen.size16"
+                android:paddingTop="@dimen/dimen.size16"
+                android:paddingEnd="@dimen/dimen.size16">
 
                 <TextView
+                    android:id="@+id/textMainHeaderDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="설명" />
+                    android:textColor="@color/grey_11"
+                    android:textSize="@dimen/text.size16"
+                    tools:text="Hello, World" />
 
             </FrameLayout>
 
@@ -58,9 +62,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:src="@drawable/ic_add"
+        android:layout_margin="@dimen/dimen.size16"
         android:contentDescription="@string/main.fab.external"
-        android:layout_margin="@dimen/dimen.margin16"
+        android:src="@drawable/ic_add"
         android:theme="@style/Kwang0.Theme.fabComponent"
         app:fabSize="mini" />
 

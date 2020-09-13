@@ -2,17 +2,14 @@
 <resources>
 
     <!-- dimension -->
-    <dimen name="dimen.margin16">16dp</dimen>
+    <dimen name="dimen.size16">16dp</dimen>
 
     <!-- Text -->
-    <dimen name="text.header1">48sp</dimen>
-    <dimen name="text.header2">36sp</dimen>
-    <dimen name="text.header3">28sp</dimen>
-    <dimen name="text.header4">24sp</dimen>
     <dimen name="text.size12">12sp</dimen>
     <dimen name="text.size14">14sp</dimen>
     <dimen name="text.size16">16sp</dimen>
     <dimen name="text.size18">18sp</dimen>
     <dimen name="text.size20">20sp</dimen>
+    <dimen name="text.size28">28sp</dimen>
 
 </resources>
