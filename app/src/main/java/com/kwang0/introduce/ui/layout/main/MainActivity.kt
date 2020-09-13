@@ -8,14 +8,21 @@ import android.view.animation.DecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
 import com.kwang0.introduce.common.Const
+import com.kwang0.introduce.model.Story
 import com.kwang0.introduce.utils.ResUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainContract.View {
+    private var presenter: MainPresenter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        presenter = MainPresenter(this).also {
+            it.initMain()
+        }
 
         typeWriterMainHeaderDescription.apply {
             setCallback { changeCardBackgroundColor() }
@@ -48,5 +55,9 @@ class MainActivity : AppCompatActivity() {
             viewMainStickyKwang0Name.layoutParams = lp
         }
         anim.start()
+    }
+
+    override fun setAdapter(stories: List<Story>) {
+
     }
 }

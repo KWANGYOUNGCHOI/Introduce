@@ -1,4 +1,4 @@
-package com.kwang0.introduce.ui.recycler.timeline
+package com.kwang0.introduce.ui.recycler.story.timeline
 
 import android.view.View
 import com.kwang0.introduce.ui.recycler.AbstractHolder
