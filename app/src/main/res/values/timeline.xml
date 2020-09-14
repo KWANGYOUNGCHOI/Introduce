@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main.timeline.title.university">Yokohama National University</string>
+    <string name="main.timeline.title.military">Compulsory Police</string>
+    <string name="main.timeline.title.student.president">Student President</string>
+    <string name="main.timeline.title.company.butake">BUTAKE</string>
+    <string name="main.timeline.title.company.wemeet">We Meet Place</string>
+    <string name="main.timeline.title.company.channel">Channel IO</string>
+</resources>
