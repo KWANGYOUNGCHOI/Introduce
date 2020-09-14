@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.holder_experience.view.*
 class ExperienceHolder(itemView: View) : AbstractHolder(itemView) {
 
     fun bind(experience: Experience) {
-        itemView.textExperienceHolderTitle.text = experience.title
+        itemView.textExperienceHolderTitle.text = experience.innerType.getTitle()
         val lm = LinearLayoutManager(itemView.context)
         lm.orientation = LinearLayoutManager.HORIZONTAL
         itemView.recyclerExperienceHolder.apply {

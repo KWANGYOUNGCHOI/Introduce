@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main.experience.language">Language</string>
+    <string name="main.experience.experience">Experience</string>
+    <string name="main.experience.ide">IDE</string>
+    <string name="main.experience.etc">etc</string>
+</resources>

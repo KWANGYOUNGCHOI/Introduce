@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.holder_experience_image.view.*
 
 class ExperienceIconHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(icon: Int) {
-        itemView.iconExperienceHolderImage.setImageDrawable(ResUtils.getDrawable(icon))
+        itemView.imageExperienceHolderIcon.setImageDrawable(ResUtils.getDrawable(icon))
     }
 
     companion object {

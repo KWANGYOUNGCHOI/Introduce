@@ -28,7 +28,6 @@
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:paddingStart="@dimen/dimen.size16"
-        android:paddingEnd="@dimen/dimen.size16"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        android:paddingEnd="@dimen/dimen.size16" />
 
 </LinearLayout>

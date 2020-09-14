@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main.timeline.title.university">Yokohama National University</string>
+    <string name="main.timeline.title.military">Compulsory Police</string>
+    <string name="main.timeline.title.student.president">Student President</string>
+    <string name="main.timeline.title.company.butake">BUTAKE</string>
+    <string name="main.timeline.title.company.wemeet">We Meet Place</string>
+    <string name="main.timeline.title.company.channel">Channel IO</string>
+
+    <string name="main.timeline.date.university">13.04 ~ 19.03</string>
+    <string name="main.timeline.date.military">14.06 ~ 16.03</string>
+    <string name="main.timeline.date.student.president">17.04 ~ 18.03</string>
+    <string name="main.timeline.date.company.butake">19.04 ~ 20.05</string>
+    <string name="main.timeline.date.company.wemeet">20.05 ~ 20.06</string>
+    <string name="main.timeline.date.company.channel">20.06 ~ </string>
+</resources>
