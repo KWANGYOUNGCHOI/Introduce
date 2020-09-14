@@ -4,10 +4,6 @@
     <string name="common.kwang0.name">kwang0</string>
     <string name="main.header.description">Hello, World\nI\'m</string>
     <string name="main.fab.external">External contents about kwang0</string>
-    <string name="main.experience.language">Language</string>
-    <string name="main.experience.experience">Experience</string>
-    <string name="main.experience.ide">IDE</string>
-    <string name="main.experience.etc">etc</string>
     <string name="main.timeline.university.admission">get into YNU</string>
     <string name="holder.unknown">UNKNOWN</string>
 </resources>

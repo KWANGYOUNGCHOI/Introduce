@@ -1,12 +1,22 @@
 package com.kwang0.introduce.enum
 
 import com.kwang0.introduce.R
+import com.kwang0.introduce.utils.ResUtils
 
 enum class ExperienceType {
     LANGUAGE,
     EXPERIENCE,
     IDE,
     ETC;
+
+    fun getTitle(): String {
+        return when(this) {
+            LANGUAGE -> ResUtils.getString("main.experience.language")
+            EXPERIENCE -> ResUtils.getString("main.experience.experience")
+            IDE -> ResUtils.getString("main.experience.ide")
+            ETC -> ResUtils.getString("main.experience.etc")
+        }
+    }
 
     fun getIcon(): List<Int> {
         return when(this) {

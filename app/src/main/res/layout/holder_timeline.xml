@@ -2,27 +2,98 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@color/grey_33"
     android:paddingTop="@dimen/dimen.size8"
     android:paddingBottom="@dimen/dimen.size8">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardTimelineIcon"
         android:layout_width="@dimen/dimen.size48"
         android:layout_height="@dimen/dimen.size48"
-        app:cardCornerRadius="@dimen/dimen.size24">
+        android:layout_margin="@dimen/dimen.size8"
+        app:cardElevation="@dimen/dimen.size4"
+        app:cardCornerRadius="@dimen/dimen.size4">
 
         <ImageView
+            android:id="@+id/imageTimelineIcon"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardTimelineContents"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/dimen.size4"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="@dimen/dimen.size8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen.size24"
+            android:paddingTop="@dimen/dimen.size16"
+            android:paddingEnd="@dimen/dimen.size8"
+            android:paddingBottom="@dimen/dimen.size16">
+
+            <TextView
+                android:id="@+id/textTimelineContentsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/night"
+                android:textColor="@color/grey_11"
+                android:textSize="@dimen/text.size28"
+                tools:text="TITLE" />
+
+            <TextView
+                android:id="@+id/textTimelineContentsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/night"
+                android:paddingTop="@dimen/dimen.size16"
+                android:paddingBottom="@dimen/dimen.size16"
+                android:textColor="@color/grey_11"
+                android:textSize="@dimen/text.size20"
+                tools:text="TITLE" />
+
+            <LinearLayout
+                android:id="@+id/layoutTimelineExternal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen.size8">
+
+                <ImageView
+                    android:id="@+id/imageTimelineExternalWeb"
+                    android:layout_width="@dimen/dimen.size24"
+                    android:layout_height="@dimen/dimen.size24"
+                    android:src="@drawable/ic_webpage"
+                    android:layout_marginTop="@dimen/dimen.size8"
+                    android:layout_marginEnd="@dimen/dimen.size8"
+                    android:layout_marginBottom="@dimen/dimen.size8" />
+
+                <ImageView
+                    android:id="@+id/imageTimelineExternalAos"
+                    android:layout_width="@dimen/dimen.size24"
+                    android:layout_height="@dimen/dimen.size24"
+                    android:layout_margin="@dimen/dimen.size8"
+                    android:src="@drawable/ic_play_store" />
+
+                <ImageView
+                    android:id="@+id/imageTimelineExternalIos"
+                    android:layout_width="@dimen/dimen.size24"
+                    android:layout_height="@dimen/dimen.size24"
+                    android:layout_margin="@dimen/dimen.size8"
+                    android:src="@drawable/ic_apple" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 

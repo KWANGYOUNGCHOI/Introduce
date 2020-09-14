@@ -10,13 +10,16 @@ import com.kwang0.introduce.utils.ResUtils
 class MainPresenter(private val view: MainContract.View): MainContract.Presenter  {
     override fun initMain() {
         val stories = arrayListOf<Story>()
-        stories.add(Experience(ResUtils.getString("main.experience.language"), ExperienceType.LANGUAGE))
-        stories.add(Experience(ResUtils.getString("main.experience.experience"), ExperienceType.EXPERIENCE))
-        stories.add(Experience(ResUtils.getString("main.experience.ide"), ExperienceType.IDE))
-        stories.add(Experience(ResUtils.getString("main.experience.etc"), ExperienceType.ETC))
-        stories.add(Timeline(ResUtils.getString("main.experience.etc"), "", TimelineType.SCHOOL))
-        stories.add(Timeline(ResUtils.getString("main.experience.etc"), "", TimelineType.SCHOOL))
-        stories.add(Timeline(ResUtils.getString("main.experience.etc"), "", TimelineType.SCHOOL))
+        stories.add(Experience(ExperienceType.LANGUAGE))
+        stories.add(Experience(ExperienceType.EXPERIENCE))
+        stories.add(Experience(ExperienceType.IDE))
+        stories.add(Experience(ExperienceType.ETC))
+        stories.add(Timeline(TimelineType.UNIVERSITY))
+        stories.add(Timeline(TimelineType.MILITARY))
+        stories.add(Timeline(TimelineType.STUDENT_PRESIDENT))
+        stories.add(Timeline(TimelineType.COMPANY_BUTAKE))
+        stories.add(Timeline(TimelineType.COMPANY_WEMEET))
+        stories.add(Timeline(TimelineType.COMPANY_CHANNEL))
         view.setAdapter(stories)
     }
 }

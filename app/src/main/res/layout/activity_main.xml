@@ -79,7 +79,10 @@
                 android:clipToPadding="false"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
-                android:padding="16dp"
+                android:paddingStart="@dimen/dimen.size16"
+                android:paddingTop="@dimen/dimen.size16"
+                android:paddingEnd="@dimen/dimen.size16"
+                android:paddingBottom="@dimen/dimen.size128"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         </LinearLayout>
