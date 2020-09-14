@@ -1,5 +1,6 @@
 package com.kwang0.introduce.ui.layout.main
 
+import android.animation.Animator
 import android.animation.ValueAnimator
 import android.os.Bundle
 import android.view.ViewGroup
@@ -10,10 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kwang0.introduce.R
 import com.kwang0.introduce.common.Const
+import com.kwang0.introduce.helper.AnimationListenerHelper
 import com.kwang0.introduce.model.Story
 import com.kwang0.introduce.ui.recycler.story.StoryAdapter
 import com.kwang0.introduce.utils.ResUtils
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_splash.*
 
 
 class MainActivity : AppCompatActivity(), MainContract.View {
@@ -24,9 +27,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        presenter = MainPresenter(this).also {
-            it.initMain()
-        }
+        presenter = MainPresenter(this)
 
         typeWriterMainHeaderDescription.apply {
             setCallback { changeCardBackgroundColor() }
@@ -38,15 +39,6 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         }
         scrollMainStickyHeader.apply {
             header = layoutMainStickyKwang0Name
-        }
-
-        val lm = LinearLayoutManager(this)
-        recyclerMainSticky.apply {
-            layoutManager = lm
-            itemAnimator = null
-            addOnScrollListener(object : RecyclerView.OnScrollListener() {
-
-            })
         }
     }
 
@@ -67,12 +59,24 @@ class MainActivity : AppCompatActivity(), MainContract.View {
             lp.width = (cardMainStickyKwang0Name.width * animation.animatedFraction).toInt()
             viewMainStickyKwang0Name.layoutParams = lp
         }
+        anim.addListener(object : AnimationListenerHelper{
+            override fun onAnimationEnd(animation: Animator?) {
+                presenter?.initMain()
+            }
+        })
         anim.start()
     }
 
     override fun setAdapter(stories: List<Story>) {
-        adapter = StoryAdapter(stories).also {
-            recyclerMainSticky.adapter = it
+        val lm = LinearLayoutManager(this)
+        recyclerMainSticky.apply {
+            layoutManager = lm
+            itemAnimator = null
+            addOnScrollListener(object : RecyclerView.OnScrollListener() {
+
+            })
+            adapter = StoryAdapter(stories)
+            notifyDataSetChanged()
         }
     }
 }

@@ -72,7 +72,7 @@
 
             </FrameLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
                 android:id="@+id/recyclerMainSticky"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +83,10 @@
                 android:paddingTop="@dimen/dimen.size16"
                 android:paddingEnd="@dimen/dimen.size16"
                 android:paddingBottom="@dimen/dimen.size128"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                app:layoutAnimation="@anim/layout_animation_from_bottom"
+                app:layoutManagerOrientation="vertical"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="linear" />
 
         </LinearLayout>
 

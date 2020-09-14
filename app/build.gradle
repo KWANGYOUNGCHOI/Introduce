@@ -35,6 +35,7 @@ dependencies {
 
     // Animation
     implementation 'com.airbnb.android:lottie:3.4.2'
+    implementation "com.mlsdev.animatedrv:library:2.0.0"
 
     testImplementation 'junit:junit:4.12'
 
