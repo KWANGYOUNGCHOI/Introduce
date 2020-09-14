@@ -16,8 +16,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
-        app:lottie_rawRes="@raw/splash_success"
-        app:lottie_speed="1" />
+        app:lottie_rawRes="@raw/splash_success" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieSplashBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSplashKwang0Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/splash_back"
+        app:lottie_speed="3" />
 
     <com.kwang0.introduce.ui.view.kwang0.Kwang0TextView
         android:id="@+id/textSplashKwang0Name"

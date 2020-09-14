@@ -23,6 +23,11 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
 
         lottieSplashKwang0.addAnimatorListener(object : AnimationListenerHelper{
             override fun onAnimationEnd(animation: Animator?) {
+                lottieSplashBack.also {
+                    if (it.isAnimating) {
+                        it.pauseAnimation()
+                    }
+                }
                 presenter?.initSplash()
             }
         })
