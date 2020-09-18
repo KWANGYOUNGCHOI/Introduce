@@ -12,7 +12,7 @@ class MainPresenter(private val view: MainContract.View): MainContract.Presenter
         val stories = arrayListOf<Story>()
         stories.add(Experience(ExperienceType.LANGUAGE))
         stories.add(Experience(ExperienceType.EXPERIENCE))
-        stories.add(Experience(ExperienceType.IDE))
+        stories.add(Experience(ExperienceType.TOOL))
         stories.add(Experience(ExperienceType.ETC))
         stories.add(Timeline(TimelineType.UNIVERSITY))
         stories.add(Timeline(TimelineType.MILITARY))

@@ -2,6 +2,6 @@
 <resources>
     <string name="main.experience.language">Language</string>
     <string name="main.experience.experience">Experience</string>
-    <string name="main.experience.ide">IDE</string>
+    <string name="main.experience.tool">Tool</string>
     <string name="main.experience.etc">etc</string>
 </resources>

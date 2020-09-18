@@ -15,6 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <FrameLayout
@@ -37,6 +38,11 @@
                     android:textSize="@dimen/text.size20"
                     tools:text="Hello, World" />
 
+                <com.kwang0.introduce.ui.view.samplecode.SampleCodeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+
             </FrameLayout>
 
             <FrameLayout
@@ -45,12 +51,18 @@
                 android:layout_height="@dimen/dimen.size64"
                 android:background="@color/white">
 
-                <com.kwang0.introduce.ui.view.kwang0.Kwang0TextView
-                    android:id="@+id/textMainStickyKwang0Name"
+                <com.kwang0.introduce.ui.view.typewriter.TypeWriterView
+                    android:id="@+id/typeWriterMainStickyKwang0Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/dimen.size16"
-                    android:paddingEnd="@dimen/dimen.size16" />
+                    android:fontFamily="@font/bazzi"
+                    android:paddingStart="@dimen/dimen.size24"
+                    android:paddingTop="@dimen/dimen.size8"
+                    android:paddingEnd="@dimen/dimen.size24"
+                    android:paddingBottom="@dimen/dimen.size8"
+                    android:textColor="@color/grey_11"
+                    android:textSize="@dimen/text.size28"
+                    tools:text="kwang0" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardMainStickyKwang0Name"
@@ -59,8 +71,9 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="@dimen/dimen.size8"
                     android:layout_marginBottom="@dimen/dimen.size16"
-                    app:cardBackgroundColor="@color/grey_cc"
-                    app:cardCornerRadius="@dimen/dimen.size4">
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dimen.size4"
+                    app:cardElevation="@dimen/dimen.size0">
 
                     <View
                         android:id="@+id/viewMainStickyKwang0Name"
