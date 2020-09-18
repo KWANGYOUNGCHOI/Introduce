@@ -106,4 +106,12 @@
         android:tint="@color/orange_50"
         app:fabSize="mini" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieSplashKwang0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen.size256"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/falling_snow" />
+
 </FrameLayout>
