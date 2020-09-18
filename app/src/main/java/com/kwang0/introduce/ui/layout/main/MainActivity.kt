@@ -29,12 +29,15 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         presenter = MainPresenter(this)
 
         typeWriterMainHeaderDescription.apply {
-            setCallback { changeCardBackgroundColor() }
+            setCallback {
+                setKwang0Name()
+                changeCardBackgroundColor()
+            }
             text = ""
             animateText(ResUtils.getString("main.header.description"))
         }
-        textMainStickyKwang0Name.apply {
-            transitionName = Const.KWANG0_NAME_TRANSITION
+        typeWriterMainStickyKwang0Name.apply {
+            text = ""
         }
         scrollMainStickyHeader.apply {
             header = layoutMainStickyKwang0Name
@@ -47,6 +50,10 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         } else {
             super.onBackPressed()
         }
+    }
+
+    private fun setKwang0Name() {
+        typeWriterMainStickyKwang0Name.animateText(ResUtils.getString("common.kwang0.name"))
     }
 
     private fun changeCardBackgroundColor() {
