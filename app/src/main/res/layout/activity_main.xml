@@ -72,8 +72,8 @@
                     android:layout_marginStart="@dimen/dimen.size8"
                     android:layout_marginBottom="@dimen/dimen.size16"
                     app:cardBackgroundColor="@color/white"
-                    app:cardPreventCornerOverlap="false"
-                    app:cardCornerRadius="@dimen/dimen.size4">
+                    app:cardCornerRadius="@dimen/dimen.size4"
+                    app:cardElevation="@dimen/dimen.size0">
 
                     <View
                         android:id="@+id/viewMainStickyKwang0Name"
