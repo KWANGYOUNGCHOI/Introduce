@@ -21,7 +21,6 @@ import kotlinx.android.synthetic.main.activity_splash.*
 
 class MainActivity : AppCompatActivity(), MainContract.View {
     private var presenter: MainPresenter? = null
-    private var adapter: StoryAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
