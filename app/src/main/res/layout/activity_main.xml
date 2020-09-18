@@ -38,6 +38,11 @@
                     android:textSize="@dimen/text.size20"
                     tools:text="Hello, World" />
 
+                <com.kwang0.introduce.ui.view.samplecode.SampleCodeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+
             </FrameLayout>
 
             <FrameLayout
