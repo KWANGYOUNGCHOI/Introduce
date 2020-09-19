@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838003029358",
+    "firebase_url": "https://introduce-24728.firebaseio.com",
+    "project_id": "introduce-24728",
+    "storage_bucket": "introduce-24728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838003029358:android:5bf91c0ee6fdd6c3d77d7f",
+        "android_client_info": {
+          "package_name": "com.kwang0.introduce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838003029358-ca4r1d7b84l56l3j2s250h642qo7ktrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBccANGHCG28hZaly0R3XvJFRtMFoAaAIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838003029358-ca4r1d7b84l56l3j2s250h642qo7ktrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
