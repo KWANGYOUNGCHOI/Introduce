@@ -14,4 +14,22 @@ object IntentUtils {
             } catch (e: Exception) { }
         }
     }
+
+    fun startEmail(context: Context, email: String?) {
+        email?.also {
+            try {
+                val intent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:$email"))
+                context.startActivity(intent)
+            } catch (e: Exception) { }
+        }
+    }
+
+    fun startPhoneCall(context: Context, phone: String?) {
+        phone?.also {
+            try {
+                val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phone"))
+                context.startActivity(intent)
+            } catch (e: Exception) { }
+        }
+    }
 }
