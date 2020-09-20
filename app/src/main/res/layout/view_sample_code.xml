@@ -10,8 +10,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="@dimen/dimen.size80"
         android:layout_height="@dimen/dimen.size8"
-        app:cardBackgroundColor="@color/yellow_pastel"
         android:layout_margin="@dimen/dimen.size4"
+        app:cardBackgroundColor="@color/yellow_pastel"
         app:cardCornerRadius="@dimen/dimen.size4" />
 
     <LinearLayout
@@ -29,9 +29,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/dimen.size32"
             android:layout_height="@dimen/dimen.size8"
+            android:layout_marginStart="@dimen/dimen.size4"
             app:cardBackgroundColor="@color/green_pastel"
-            app:cardCornerRadius="@dimen/dimen.size4"
-            android:layout_marginStart="@dimen/dimen.size4"/>
+            app:cardCornerRadius="@dimen/dimen.size4" />
 
     </LinearLayout>
 
@@ -50,9 +50,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/dimen.size64"
             android:layout_height="@dimen/dimen.size8"
+            android:layout_marginStart="@dimen/dimen.size4"
             app:cardBackgroundColor="@color/yellow_pastel"
-            app:cardCornerRadius="@dimen/dimen.size4"
-            android:layout_marginStart="@dimen/dimen.size4"/>
+            app:cardCornerRadius="@dimen/dimen.size4" />
 
     </LinearLayout>
 
