@@ -7,10 +7,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text.size20"
-        android:fontFamily="@font/night"
-        android:textColor="@color/grey_33"
         android:layout_gravity="center"
-        android:text="@string/holder.unknown" />
+        android:fontFamily="@font/night"
+        android:text="@string/holder.unknown"
+        android:textColor="@color/grey_33"
+        android:textSize="@dimen/text.size20" />
 
 </FrameLayout>
