@@ -5,10 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.introduce.R
-import com.kwang0.introduce.common.Const
 import com.kwang0.introduce.helper.AnimationListenerHelper
 import com.kwang0.introduce.ui.layout.main.MainActivity
-import com.kwang0.introduce.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
@@ -23,11 +21,6 @@ class SplashActivity : AppCompatActivity(), SplashContract.View {
 
         lottieSplashKwang0.addAnimatorListener(object : AnimationListenerHelper{
             override fun onAnimationEnd(animation: Animator?) {
-                lottieSplashBack.also {
-                    if (it.isAnimating) {
-                        it.pauseAnimation()
-                    }
-                }
                 presenter?.initSplash()
             }
         })
