@@ -14,12 +14,13 @@ import com.kwang0.introduce.common.Const
 import com.kwang0.introduce.helper.AnimationListenerHelper
 import com.kwang0.introduce.model.Story
 import com.kwang0.introduce.ui.recycler.story.StoryAdapter
+import com.kwang0.introduce.ui.recycler.story.StoryAdapterModel
 import com.kwang0.introduce.utils.ResUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_splash.*
 
 
-class MainActivity : AppCompatActivity(), MainContract.View {
+class MainActivity : AppCompatActivity(), MainContract.View, StoryAdapterModel {
     private var presenter: MainPresenter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,8 +82,16 @@ class MainActivity : AppCompatActivity(), MainContract.View {
             addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
             })
-            adapter = StoryAdapter(stories)
+            adapter = StoryAdapter(stories, this@MainActivity)
             notifyDataSetChanged()
+        }
+    }
+
+    override fun scrollToTop() {
+        layoutMainUnStickyHeader.also { header ->
+            scrollMainStickyHeader.also { scrollView ->
+                scrollView.smoothScrollTo(scrollView.scrollX, header.top)
+            }
         }
     }
 }

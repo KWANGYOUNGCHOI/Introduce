@@ -3,6 +3,7 @@ package com.kwang0.introduce.enum
 enum class StoryType(private val value: Int) {
     EXPERIENCE(0),
     TIMELINE(1),
+    MOVETOP(2),
     UNKNOWN(9999);
 
     fun toInt(): Int {
