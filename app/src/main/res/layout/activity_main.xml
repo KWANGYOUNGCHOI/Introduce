@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <FrameLayout
+                android:id="@+id/layoutMainUnStickyHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/dimen.size16"
@@ -95,7 +96,7 @@
                 android:paddingStart="@dimen/dimen.size16"
                 android:paddingTop="@dimen/dimen.size16"
                 android:paddingEnd="@dimen/dimen.size16"
-                android:paddingBottom="@dimen/dimen.size128"
+                android:paddingBottom="@dimen/dimen.size24"
                 app:layoutAnimation="@anim/layout_animation_from_bottom"
                 app:layoutManagerOrientation="vertical"
                 app:layoutManagerReverse="false"

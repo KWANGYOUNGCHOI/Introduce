@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen.size8"
+    android:paddingBottom="@dimen/dimen.size8">
+
+    <ImageView
+        android:id="@+id/imageMoveTopIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen.size40"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_arrow_up" />
+
+    <TextView
+        android:id="@+id/textMoveTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/night"
+        android:text="@string/main.move.top"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text.size20" />
+
+</LinearLayout>

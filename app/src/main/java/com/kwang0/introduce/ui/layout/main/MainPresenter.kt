@@ -3,6 +3,7 @@ package com.kwang0.introduce.ui.layout.main
 import com.kwang0.introduce.enum.ExperienceType
 import com.kwang0.introduce.enum.TimelineType
 import com.kwang0.introduce.model.Experience
+import com.kwang0.introduce.model.MoveTop
 import com.kwang0.introduce.model.Story
 import com.kwang0.introduce.model.Timeline
 import com.kwang0.introduce.utils.ResUtils
@@ -20,6 +21,7 @@ class MainPresenter(private val view: MainContract.View): MainContract.Presenter
         stories.add(Timeline(TimelineType.COMPANY_BUTAKE))
         stories.add(Timeline(TimelineType.COMPANY_WEMEET))
         stories.add(Timeline(TimelineType.COMPANY_CHANNEL))
+        stories.add(MoveTop())
         view.setAdapter(stories)
     }
 }

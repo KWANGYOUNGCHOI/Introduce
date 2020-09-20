@@ -8,6 +8,7 @@
     <dimen name="dimen.size16">16dp</dimen>
     <dimen name="dimen.size24">24dp</dimen>
     <dimen name="dimen.size32">32dp</dimen>
+    <dimen name="dimen.size40">40dp</dimen>
     <dimen name="dimen.size48">48dp</dimen>
     <dimen name="dimen.size64">64dp</dimen>
     <dimen name="dimen.size80">80dp</dimen>
